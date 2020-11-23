@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  height: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #4b4b4b;
+  border-radius: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+label:first-of-type{
+  color: #3f3f3f;
+}
+
+label {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  color: #8d8d8d;
+}
+
+input[type="text"] {
+  border: none;
+  border-bottom: 2px solid #8d8d8d;
+  background-color: white;
+}
+
+
+
+
