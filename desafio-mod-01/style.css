@@ -1,0 +1,60 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+label {
+  color: #00afa2;
+}
+
+.share {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#share-value {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #00afa2;
+  margin-top: 10px;
+  margin-right: 7px;
+  outline: 0;
+}
+
+.btn-share {
+  width: 90px;
+  padding: 8px;
+  border: none;
+  background-color: #c2c2c2;
+  font-weight: bold;
+}
+
+.btn-enable {
+  color: #fff;
+  background-color: #00afa2;
+  cursor: pointer;
+  outline: 0;
+}
+
+.share-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 50px;
+  gap: 10px;
+}
+
+.users-filtered {
+  width: 50%;
+  padding-left: 10px;
+  border: 1px solid rgb(158, 158, 158);
+  border-radius: 4px;
+  
+}
