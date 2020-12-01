@@ -34,23 +34,37 @@ async function fetchUsers() {
 }
 
 function render() {
-  renderUserList();
   renderTotalUsers();
-
   handleUsersSeach();
 }
 
 function handleUsersSeach() {
-  let searchUsers = document.querySelector('#share-value');
+  const searchUsers = document.querySelector('#share-value');
 
   searchUsers.addEventListener('keyup', () => {
-    
 
-    console.log(searchUsers.value);
-  })
+    let memorizeValue = searchUsers.value;
+
+    if (memorizeValue.length > 0) {
+      document.querySelector('button').removeAttribute('disabled');
+      document.querySelector('button').classList.add('btn-enable');
+    }
+    if (memorizeValue.length == 0) {
+      document.querySelector('button').setAttribute('disabled', 'disabled');
+      document.querySelector('button').classList.remove('btn-enable');
+    }
+  });
+
+  document.querySelector('#btn-search-value').addEventListener('click', () => {
+
+    renderUserList(searchUsers.value);
+  });
 }
 
-function renderUserList() {
+function renderUserList(users) {
+
+  console.log(users);
+
   let usersHTML = '<div>';
 
   allUsers.forEach(user => {
@@ -75,7 +89,6 @@ function renderTotalUsers() {
   let totalUsers = allUsers.length;
 
   countUsers.textContent = `${totalUsers} usuário(s) encontrado(s)`;
-  
 }
 
 
