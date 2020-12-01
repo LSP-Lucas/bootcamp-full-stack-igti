@@ -45,7 +45,6 @@ label {
 .share-container {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-around;
   margin-top: 50px;
   gap: 10px;
@@ -56,5 +55,18 @@ label {
   padding-left: 10px;
   border: 1px solid rgb(158, 158, 158);
   border-radius: 4px;
-  
+}
+
+.list-users {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.list-users img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
