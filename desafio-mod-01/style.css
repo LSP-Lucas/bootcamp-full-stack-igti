@@ -7,18 +7,22 @@ h1 {
   text-align: center;
 }
 
+.hide {
+  display: none;
+}
+
 label {
   color: #00afa2;
 }
 
-.share {
+.search {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
 }
 
-#share-value {
+#search-value {
   width: 100%;
   border: none;
   border-bottom: 2px solid #00afa2;
@@ -27,7 +31,7 @@ label {
   outline: 0;
 }
 
-.btn-share {
+.btn-search {
   width: 90px;
   padding: 8px;
   border: none;
@@ -42,7 +46,7 @@ label {
   outline: 0;
 }
 
-.share-container {
+.search-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -69,4 +73,40 @@ label {
   height: 60px;
   border-radius: 50%;
   margin-right: 10px;
+}
+
+.list-statics div {
+  margin-bottom: 8px;
+}
+
+.list-statics div span {
+  font-weight: bold;
+}
+
+/* Loading */
+
+.loader-hide {
+  display: none;
+}
+
+.loader {
+  margin: 0 auto;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
