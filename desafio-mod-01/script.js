@@ -3,6 +3,7 @@ let tabUsers = null;
 let titleStatic = null;
 let tabStatics = null;
 
+let filterUsers = [];
 let allUsers = [];
 
 window.addEventListener('load', () => {
@@ -34,7 +35,6 @@ async function fetchUsers() {
 }
 
 function render() {
-  renderTotalUsers();
   handleUsersSeach();
 }
 
@@ -52,6 +52,9 @@ function handleUsersSeach() {
     if (memorizeValue.length == 0) {
       document.querySelector('button').setAttribute('disabled', 'disabled');
       document.querySelector('button').classList.remove('btn-enable');
+
+      tabUsers.innerHTML = '';
+      countUsers.textContent = 'Nenhum usuário filtrado';
     }
   });
 
@@ -63,11 +66,14 @@ function handleUsersSeach() {
 
 function renderUserList(users) {
 
-  console.log(users);
+  filterUsers = allUsers.filter(user => {
+    return user.firstName.toLowerCase().indexOf(users.toLowerCase()) > -1
+      || user.lastename.toLowerCase().indexOf(users.toLowerCase()) > -1;
+  });
 
   let usersHTML = '<div>';
 
-  allUsers.forEach(user => {
+  filterUsers.forEach(user => {
     const { firstName, lastename, img, dob, gender } = user;
 
     const userHTML = `
@@ -83,12 +89,15 @@ function renderUserList(users) {
   usersHTML += '</div>';
 
   tabUsers.innerHTML = usersHTML;
+
+  renderTotalUsers(filterUsers.length);
 }
 
-function renderTotalUsers() {
-  let totalUsers = allUsers.length;
+function renderTotalUsers(totalFilterUsers) {
 
-  countUsers.textContent = `${totalUsers} usuário(s) encontrado(s)`;
+  if (typeof totalFilterUsers !== 'undefined') {
+    countUsers.textContent = `${totalFilterUsers} usuário(s) encontrado(s)`;
+  }
 }
 
 
