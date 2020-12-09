@@ -32,8 +32,12 @@ async function stateAndCity() {
 
 function readStates(states) {
   states.forEach(uf => {
-    const data = JSON.parse(fs.readFile(`${uf}.json`));
-    console.log(data);
+    fs.readFile(`${uf}.json`, "utf-8").then(resp => {
+      console.log(`${uf}: ${resp.length}`);
+    }).catch(err => {
+      console.log(err);
+    })
+    
   })
 }
 
