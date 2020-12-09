@@ -6,26 +6,36 @@ async function stateAndCity() {
   const estados = JSON.parse(await fs.readFile("./data/Estados.json"));
   const cidades = JSON.parse(await fs.readFile("./data/Cidades.json"));
 
-  const states = {};
+  const citys = [];
+  const states = [];
   estados.forEach(estado => {
     const { ID, Sigla } = estado;
-    const contais = states[Sigla];
+    // const contais = citys[Sigla];
 
-    if (!contais) {
-      states[Sigla] = [];
-    }
+    // if (!contais) {
+    //   citys[Sigla] = [];
+    // }
+
+    states.push(Sigla);
 
     cidades.forEach(cidade => {
       const { Estado, Nome } = cidade;
 
       if (ID === Estado) {
-        states[Sigla].push(Nome)
+        citys.push(Nome)
       }
     });
+    fs.writeFile(`${Sigla}.json`, JSON.stringify(citys));
   });
-  console.log(states);
+  readStates(states);
+}
+
+function readStates(states) {
+  states.forEach(uf => {
+    const data = JSON.parse(fs.readFile(`${uf}.json`));
+    console.log(data);
+  })
 }
 
 
-
-// Executa: node --experimental-modules export.js
+// Executa: node --experimental-modules index.js
