@@ -1,6 +1,6 @@
 import { promises as fs } from 'fs';
 
-let allStatesAndCity = [];
+const states = [];
 
 stateAndCity();
 
@@ -9,7 +9,7 @@ async function stateAndCity() {
   const cidades = JSON.parse(await fs.readFile("./data/Cidades.json"));
 
   const citys = [];
-  const states = [];
+
   estados.forEach(estado => {
     const { ID, Sigla } = estado;
 
@@ -26,13 +26,6 @@ async function stateAndCity() {
     const objCity = {
       cidades: citys
     }
-
-    const arr = {
-      estado: Sigla,
-      cidade: citys
-    }
-
-    allStatesAndCity.push(arr);
 
     fs.writeFile(`${Sigla}.json`, JSON.stringify(objCity));
   });
@@ -107,18 +100,31 @@ function smallState(arrOrdenado) {
 function cityBigName() {
   console.log("\n\n5 - Cidades com maior nome de cada estado\n");
 
-  const bigCity = [];
-  let bigNum = 0;
+  let dados = [];
 
-  let varTemp = '';
+  states.forEach(uf => {
+    fs.readFile(`${uf}.json`).then(resp => {
+      const value = JSON.parse(resp);
+      const totalCity = value.cidades.length;
 
-  for (let value of allStatesAndCity) {
+      let temp = 0;
 
-    value.cidade.forEach(valor => {
-      console.log(valor)
-    })
+      for (let i of value.cidades){
+        if (i.length > temp) {
+          temp = i.length;
+          dados = [`${i} - ${uf}`];
+        }
+        
+      }
+      console.log(dados)
 
-  }
+    }).catch(err => {
+      console.log(err);
+    });
+  });
+    
+
+  
 
 }
 
