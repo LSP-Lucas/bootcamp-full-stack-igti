@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { promises as fs } from 'fs';
 
 const states = [];
@@ -129,3 +130,5 @@ function cityBigName() {
 }
 
 // Executa: node --experimental-modules index.js
+=======
+>>>>>>> 2537a06d2404ecfe92b18ae412bf92f15437bfa0
