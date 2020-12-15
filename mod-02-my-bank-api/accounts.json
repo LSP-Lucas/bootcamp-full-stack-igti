@@ -1,20 +1,30 @@
 {
-  "nextId": 5,
+  "nextId": 7,
   "accounts": [
     {
       "id": 2,
-      "name": "Lucas Pedroso",
-      "balance": 200
+      "name": "Lucas da Silva Pedroso",
+      "balance": 7000.55
     },
     {
       "id": 3,
-      "name": "José Silva",
-      "balance": 2
+      "name": "Yesmin Marie",
+      "balance": 800
     },
     {
       "id": 4,
-      "name": "Kiko Gonçalves",
-      "balance": 10000
+      "name": "Marta Ferreira",
+      "balance": 0
+    },
+    {
+      "id": 5,
+      "name": "Aline Prado",
+      "balance": 500
+    },
+    {
+      "id": 6,
+      "name": "Daiane Vieira",
+      "balance": 7000.55
     }
   ]
 }
