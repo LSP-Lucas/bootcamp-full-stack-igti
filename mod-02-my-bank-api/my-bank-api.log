@@ -1,0 +1,96 @@
+2020-12-15T11:31:58.824Z [my-bank-api] info: API Started!
+2020-12-15T11:32:34.527Z [my-bank-api] info: API Started!
+2020-12-15T11:32:48.292Z [my-bank-api] info: API Started!
+2020-12-15T11:32:56.801Z [my-bank-api] info: API Started!
+2020-12-15T11:33:04.345Z [my-bank-api] info: API Started!
+2020-12-15T11:34:05.962Z [my-bank-api] info: API Started!
+2020-12-15T11:34:24.655Z [my-bank-api] info: API Started!
+2020-12-15T11:36:06.845Z [my-bank-api] info: API Started!
+2020-12-15T11:37:43.326Z [my-bank-api] error: ENOENT: no such file or directory, open 'C:\Users\LUCAS.NTEA01\Desktop\bootcamp-full-stack-igti\mod-02-my-bank-api\accounts.json'
+2020-12-15T11:39:13.360Z [my-bank-api] info: API Started and File Created!
+2020-12-15T11:41:51.405Z [my-bank-api] info: API Started!
+2020-12-15T11:42:28.180Z [my-bank-api] info: API Started!
+2020-12-15T11:42:48.394Z [my-bank-api] info: API Started!
+2020-12-15T11:43:03.577Z [my-bank-api] info: API Started!
+2020-12-15T11:43:35.140Z [my-bank-api] info: API Started!
+2020-12-15T11:44:01.234Z [my-bank-api] info: API Started!
+2020-12-15T11:44:53.006Z [my-bank-api] info: API Started!
+2020-12-15T11:45:41.995Z [my-bank-api] info: API Started!
+2020-12-15T11:46:16.794Z [my-bank-api] info: POST /account - {"id":1,"name":"João carter","balance":5.5}
+2020-12-15T11:46:44.452Z [my-bank-api] info: POST /account - {"id":2,"name":"Lucas Pedroso","balance":7.5}
+2020-12-15T11:47:08.572Z [my-bank-api] info: PUT /account - {"id":1,"name":"Kiko Gonçalves","balance":5000}
+2020-12-15T11:47:29.306Z [my-bank-api] info: GET /account
+2020-12-15T11:47:39.800Z [my-bank-api] info: GET /account/:id
+2020-12-15T11:47:40.155Z [my-bank-api] info: GET /account/:id
+2020-12-15T11:47:53.436Z [my-bank-api] info: DELETE /account/:id - 1
+2020-12-15T11:48:04.503Z [my-bank-api] info: GET /account
+2020-12-15T13:00:40.069Z [my-bank-api] info: API Started!
+2020-12-15T13:02:37.807Z [my-bank-api] info: API Started!
+2020-12-15T13:03:39.774Z [my-bank-api] info: API Started!
+2020-12-15T13:04:27.810Z [my-bank-api] error: POST /account - Name e Balance são obrigatórios.
+2020-12-15T13:04:40.589Z [my-bank-api] error: POST /account - Name e Balance são obrigatórios.
+2020-12-15T13:05:24.171Z [my-bank-api] info: API Started!
+2020-12-15T13:05:45.596Z [my-bank-api] info: POST /account - {"id":3,"name":"Lucas Pedroso","balance":0}
+2020-12-15T13:05:52.661Z [my-bank-api] error: POST /account - Name e Balance são obrigatórios.
+2020-12-15T13:07:45.517Z [my-bank-api] info: API Started!
+2020-12-15T13:08:26.338Z [my-bank-api] info: POST /account - {"id":4,"name":"Marta Ferreira","balance":0}
+2020-12-15T13:10:46.677Z [my-bank-api] info: API Started!
+2020-12-15T13:11:27.453Z [my-bank-api] info: API Started!
+2020-12-15T13:11:41.642Z [my-bank-api] info: API Started!
+2020-12-15T13:12:00.007Z [my-bank-api] error: PUT /account - Registro não encontrado.
+2020-12-15T13:13:58.840Z [my-bank-api] info: API Started!
+2020-12-15T13:14:56.603Z [my-bank-api] info: API Started!
+2020-12-15T13:15:11.749Z [my-bank-api] info: API Started!
+2020-12-15T13:16:37.088Z [my-bank-api] info: API Started!
+2020-12-15T13:18:08.682Z [my-bank-api] info: API Started!
+2020-12-15T13:18:54.531Z [my-bank-api] info: API Started!
+2020-12-15T13:20:08.816Z [my-bank-api] info: API Started!
+2020-12-15T13:20:23.956Z [my-bank-api] info: API Started!
+2020-12-15T14:02:57.619Z [my-bank-api] info: API Started!
+2020-12-15T14:03:59.969Z [my-bank-api] info: API Started!
+2020-12-15T14:04:44.509Z [my-bank-api] info: API Started!
+2020-12-15T14:06:28.828Z [my-bank-api] info: API Started!
+2020-12-15T14:06:45.586Z [my-bank-api] info: API Started!
+2020-12-15T14:08:07.501Z [my-bank-api] info: API Started!
+2020-12-15T15:29:14.788Z [my-bank-api] info: API Started!
+2020-12-15T15:29:58.738Z [my-bank-api] info: API Started!
+2020-12-15T15:30:07.695Z [my-bank-api] info: API Started!
+2020-12-15T15:30:24.651Z [my-bank-api] info: API Started!
+2020-12-15T15:35:59.002Z [my-bank-api] info: API Started!
+2020-12-15T15:37:24.948Z [my-bank-api] info: GET /account
+2020-12-15T15:37:34.439Z [my-bank-api] info: GET /account
+2020-12-15T15:37:55.776Z [my-bank-api] info: POST /account - {"id":5,"name":"Lucas Pedroso","balance":7000.55}
+2020-12-15T15:38:12.950Z [my-bank-api] info: GET /account
+2020-12-15T17:49:42.623Z [my-bank-api] info: API Started!
+2020-12-15T17:51:16.769Z [my-bank-api] info: API Started!
+2020-12-15T17:51:50.421Z [my-bank-api] info: GET /account
+2020-12-15T17:52:23.901Z [my-bank-api] info: PUT /account - {"id":5,"name":"Aline Prado","balance":500}
+2020-12-15T17:52:26.902Z [my-bank-api] info: PUT /account - {"id":5,"name":"Aline Prado","balance":500}
+2020-12-15T17:52:40.275Z [my-bank-api] info: GET /account
+2020-12-15T17:53:18.582Z [my-bank-api] info: GET /account
+2020-12-15T17:53:43.413Z [my-bank-api] info: PUT /account - {"id":3,"name":"Yesmin Marie","balance":800}
+2020-12-15T17:53:49.281Z [my-bank-api] info: GET /account
+2020-12-15T18:06:10.949Z [my-bank-api] info: API Started!
+2020-12-15T18:06:31.054Z [my-bank-api] info: GET /account/:id
+2020-12-15T18:09:48.056Z [my-bank-api] info: API Started!
+2020-12-15T18:10:00.286Z [my-bank-api] info: GET /account/:id
+2020-12-15T18:10:06.328Z [my-bank-api] info: GET /account/:id
+2020-12-15T18:10:32.436Z [my-bank-api] info: GET /account
+2020-12-15T18:10:46.780Z [my-bank-api] info: GET /account/:id
+2020-12-15T18:10:51.275Z [my-bank-api] info: GET /account/:id
+2020-12-15T18:10:54.563Z [my-bank-api] info: GET /account/:id
+2020-12-15T18:11:07.601Z [my-bank-api] info: GET /account/:id
+2020-12-15T18:13:50.423Z [my-bank-api] info: API Started!
+2020-12-15T18:14:05.649Z [my-bank-api] info: GET /account/:id
+2020-12-15T18:14:33.869Z [my-bank-api] info: GET /account/:id
+2020-12-15T18:14:40.360Z [my-bank-api] info: GET /account/:id
+2020-12-15T18:14:56.894Z [my-bank-api] info: GET /account/:id
+2020-12-15T18:15:27.269Z [my-bank-api] info: GET /account/:id
+2020-12-15T18:20:07.807Z [my-bank-api] info: GET /account
+2020-12-15T18:20:42.682Z [my-bank-api] info: POST /account - {"id":6,"name":"Daiane Vieira","balance":7000.55}
+2020-12-15T18:20:47.897Z [my-bank-api] info: GET /account
+2020-12-15T18:21:35.219Z [my-bank-api] info: PUT /account - {"id":2,"name":"Lucas da Silva Pedroso","balance":7000.55}
+2020-12-15T18:21:38.807Z [my-bank-api] info: GET /account
+2020-12-15T18:22:26.809Z [my-bank-api] info: GET /account/:id
+2020-12-15T18:22:34.257Z [my-bank-api] info: GET /account/:id
+2020-12-15T18:29:42.413Z [my-bank-api] info: GET /account
