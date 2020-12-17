@@ -424,12 +424,6 @@
       "timestamp": "2020-12-16T01:00:09.797Z"
     },
     {
-      "id": 54,
-      "subject": "01 - Java",
-      "type": "Avaliação",
-      "timestamp": "2020-12-16T01:01:29.044Z"
-    },
-    {
       "id": 55,
       "student": "Gilson Castadelli",
       "subject": "04 - MongoDB",
@@ -474,7 +468,7 @@
       "student": "Abner teste",
       "subject": "BSI",
       "type": "Questionário",
-      "value": 10,
+      "value": 20,
       "timestamp": "2020-12-16T19:20:00.621Z"
     },
     {
@@ -482,7 +476,7 @@
       "student": "Abner teste",
       "subject": "BSI",
       "type": "Questionário",
-      "value": 10,
+      "value": 30,
       "timestamp": "2020-12-16T19:20:02.854Z"
     },
     {
@@ -490,7 +484,7 @@
       "student": "Abner teste",
       "subject": "BSI",
       "type": "Questionário",
-      "value": 10,
+      "value": 50,
       "timestamp": "2020-12-16T19:20:03.950Z"
     },
     {
@@ -498,7 +492,7 @@
       "student": "Abner teste",
       "subject": "BSI",
       "type": "Questionário",
-      "value": 10,
+      "value": 40,
       "timestamp": "2020-12-16T19:20:04.891Z"
     }
   ]

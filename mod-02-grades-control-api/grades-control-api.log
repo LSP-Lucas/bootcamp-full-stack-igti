@@ -17,3 +17,19 @@
 2020-12-16T19:20:04.897Z [grades-control-api] info: POST /grade
 2020-12-16T19:20:07.240Z [grades-control-api] info: GET /grade
 2020-12-16T19:20:10.197Z [grades-control-api] info: GET /grade
+2020-12-17T00:14:28.038Z [grades-control-api] info: GET /grade
+2020-12-17T02:58:16.647Z [grades-control-api] info: GET /grade
+2020-12-17T03:00:24.279Z [grades-control-api] info: /consultarMedia
+2020-12-17T03:00:36.729Z [grades-control-api] info: /consultarMedia
+2020-12-17T03:00:55.382Z [grades-control-api] info: /consultarMedia
+2020-12-17T03:01:10.984Z [grades-control-api] info: /consultarMedia
+2020-12-17T03:01:32.435Z [grades-control-api] info: /bigGrades
+2020-12-17T03:02:21.954Z [grades-control-api] info: /bigGrades
+2020-12-17T03:02:27.657Z [grades-control-api] info: /bigGrades
+2020-12-17T03:03:13.416Z [grades-control-api] info: /bigGrades
+2020-12-17T03:04:03.377Z [grades-control-api] info: /bigGrades
+2020-12-17T03:06:07.767Z [grades-control-api] info: /bigGrades
+2020-12-17T03:09:24.082Z [grades-control-api] info: /bigGrades
+2020-12-17T03:11:30.946Z [grades-control-api] info: /bigGrades
+2020-12-17T03:11:53.180Z [grades-control-api] info: /bigGrades
+2020-12-17T03:12:42.749Z [grades-control-api] info: /bigGrades

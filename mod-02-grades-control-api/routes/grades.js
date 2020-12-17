@@ -134,8 +134,6 @@ router.delete("/:id", async (req, res, next) => {
   }
 });
 
-// Exercício 5
-
 router.get("/:student/:subject", async (req, res, next) => {
   try {
     const { student, subject } = req.params;
@@ -145,12 +143,63 @@ router.get("/:student/:subject", async (req, res, next) => {
       grade => grade.student === student && grade.subject === subject
     );
 
-    const sum = filteredValues.reduce((acc, value) => {
+    const sum = filteredValues.reduce((acc, val) => {
+      return acc += val.value
+    }, 0);
 
-    })
+    res.send({ totalSum: sum });
 
-    res.send(filteredValues);
+    global.logger.info("/:student/:subject");
+  } catch (err) {
+    next(err);
+  }
+});
 
+router.post("/consultarMedia", async (req, res, next) => {
+  try {
+    const { subject, type } = req.body;
+    const data = JSON.parse(await readFile("grades.json"));
+
+    const filteredValues = data.grades.filter(
+      grade => grade.subject === subject && grade.type === type
+    );
+    
+    let cont = 0;
+    let sum = 0;
+    
+    filteredValues.forEach(grade => {
+      cont++;
+      return sum += grade.value
+    });
+
+    const mediaFinal = sum / cont;
+    res.send({ media: mediaFinal });
+
+    global.logger.info("/consultarMedia");
+  } catch (err) {
+    next(err);
+  }
+});
+
+router.post("/bigGrades", async (req, res, next) => {
+  try {
+    const { subject, type } = req.body;
+
+    const data = JSON.parse(await readFile("grades.json"));
+
+    const filteredValues = data.grades.filter(
+      grade => grade.subject === subject && grade.type === type
+    );
+    
+    filteredValues.sort((a, b) => {
+      return b.value - a.value;
+    });
+
+    const bigGrades = filteredValues.slice(0, 3);
+
+    res.send(bigGrades);
+
+    global.logger.info("/bigGrades");
   } catch (err) {
     next(err);
   }
