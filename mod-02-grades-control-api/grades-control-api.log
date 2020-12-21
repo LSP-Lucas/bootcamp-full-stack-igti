@@ -33,3 +33,16 @@
 2020-12-17T03:11:30.946Z [grades-control-api] info: /bigGrades
 2020-12-17T03:11:53.180Z [grades-control-api] info: /bigGrades
 2020-12-17T03:12:42.749Z [grades-control-api] info: /bigGrades
+2020-12-17T10:18:54.656Z [grades-control-api] info: /consultarMedia
+2020-12-17T10:20:34.798Z [grades-control-api] info: /bigGrades
+2020-12-17T10:21:41.844Z [grades-control-api] info: /consultarMedia
+2020-12-17T10:22:35.553Z [grades-control-api] info: /:student/:subject
+2020-12-17T10:23:44.904Z [grades-control-api] info: POST /grade
+2020-12-17T10:23:53.486Z [grades-control-api] info: /:student/:subject
+2020-12-17T10:24:46.000Z [grades-control-api] info: /:student/:subject
+2020-12-17T10:26:45.456Z [grades-control-api] info: GET /grade/:id
+2020-12-17T10:27:38.919Z [grades-control-api] info: PUT /grade
+2020-12-17T10:28:02.792Z [grades-control-api] info: /consultarMedia
+2020-12-17T10:28:34.541Z [grades-control-api] info: DELETE /grade/:id
+2020-12-17T10:29:00.308Z [grades-control-api] info: /consultarMedia
+2020-12-17T10:29:19.580Z [grades-control-api] info: GET /grade/:id
