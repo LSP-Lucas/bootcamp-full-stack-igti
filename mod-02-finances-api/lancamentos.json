@@ -1,0 +1,35 @@
+{
+  "nextId": 23,
+  "lancamentos": [
+    {
+      "id": 18,
+      "valor": 500,
+      "categoria": "Salário",
+      "data": "17/12/2020"
+    },
+    {
+      "id": 19,
+      "valor": 500,
+      "categoria": "Salário",
+      "data": "17/12/2020"
+    },
+    {
+      "id": 20,
+      "valor": -500,
+      "categoria": "Supermercado",
+      "data": "17/12/2020"
+    },
+    {
+      "id": 21,
+      "valor": 1000,
+      "categoria": "Salário",
+      "data": "17/12/2020"
+    },
+    {
+      "id": 22,
+      "valor": -500,
+      "categoria": "Supermercado",
+      "data": "17/12/2020"
+    }
+  ]
+}
