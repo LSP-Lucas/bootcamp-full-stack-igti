@@ -1,5 +1,5 @@
 # Bootcamp Full Stack - IGTI
-**Objetivo principal:** Oferecer uma formação prática e intensiva que habilite o profissional para atuar como desenvolvedor Full Stack.
+**Objetivo principal:** Oferecer uma formação prática e intensiva que habilite o profissional para atuar como desenvolvedor Full Stack.</br>
 **Objetivos específicos:** Conheça técnicas de construção de uma aplicação passando por todas as suas camadas lógicas - backend, frontend, persistência de dados NoSQL, controle de versionamento de código com Git e implantação em nuvem - habilitando-se para atuar profissionalmente na área.</br>
 **Pré-requisitos:** Conhecer lógica de programação, conhecer pelo menos uma linguagem de programação; saber utilizar variáveis, estruturas de decisão, estruturas de repetição e funções; ter noções de HTML e CSS.
 
