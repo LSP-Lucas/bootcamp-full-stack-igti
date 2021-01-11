@@ -5,34 +5,20 @@ import IncrementButton from './IncrementButton';
 import Steps from './Steps';
 import Value from './Value';
 
-export default class Counter extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      currentCounter: 2,
-      steps: 0
-    };
-  }
-
+export default class Counter2 extends Component {
   handleButtonClick = (clickType) => {
-    const { currentCounter, steps } = this.state;
-
-    this.setState({
-      currentCounter: clickType === '+' ? currentCounter + 1 : currentCounter - 1,
-      steps: steps + 1
-    });
+    this.props.onCount(clickType);
   }
 
   render() {
-    const { currentCounter, steps } = this.state;
+    const { countValue, currentStep } = this.props;
 
     return (
       <div className={css.counterContainer}>
         <DecrementButton onDecrement={this.handleButtonClick}/>
-        <Value value={currentCounter}/>
+        <Value value={countValue}/>
         <IncrementButton onIncrement={this.handleButtonClick} />
-        <Steps currentStep={steps}/>
+        <Steps currentStep={currentStep}/>
       </div>
     )
   }
